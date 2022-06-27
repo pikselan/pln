@@ -1,0 +1,1 @@
+[17-Sep-2021 18:37:48 Asia/Jakarta] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/lisnatel/pln/vendor/phpoffice/phpspreadsheet/src/PhpSpreadsheet/Worksheet/Worksheet.php on line 1178
