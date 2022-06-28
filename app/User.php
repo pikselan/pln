@@ -40,7 +40,7 @@ class User extends \TCG\Voyager\Models\User
 
     public function scopeFilterAdmin($query)
     {
-        return $query->where('id', '!=', 5);
+        return $query->where('id', '!=', 1);
     }
 
     
