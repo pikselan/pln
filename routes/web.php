@@ -19,8 +19,11 @@ use Illuminate\Support\Facades\Route;
 Route::redirect('/', '/admin');
 
 Route::group(['prefix' => 'admin'], function () {
-    Voyager::routes();
+    Voyager::routes();    
 });
+
+Route::get('/admin/databox', 'DataboxController@index')->middleware('admin.user');
+Route::post('/admin/databox', 'DataboxController@index')->middleware('admin.user');
 
 Route::post('/admin/pelanggans/import_excel', 'PelangganController@import_excel')->middleware('admin.user');
 
