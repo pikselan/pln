@@ -228,42 +228,42 @@ class DataKegiatanController extends Controller
 
         if($request->file('foto_kwh')){
           $ext_foto_kwh = $request->foto_kwh->extension();
-          $foto_kwh = $request->foto_kwh->storeAs('public/data-kegiatans/'.$timeyear.' '.$timemonth.'/'.$pelanggan->id_pelanggan.'/'.$timenow, Str::random(20).".".$ext_foto_kwh);
+          $foto_kwh = $request->foto_kwh->storeAs('public/data_kegiatans/'.$timeyear.' '.$timemonth.'/'.$pelanggan->id_pelanggan.'/'.$timenow, Str::random(20).".".$ext_foto_kwh);
           $data->foto_kwh = str_replace("public/","",$foto_kwh); 
         }
         if($request->file('foto_mcb')){
           $ext_foto_mcb = $request->foto_mcb->extension();
-          $foto_mcb = $request->foto_mcb->storeAs('public/data-kegiatans/'.$timeyear.' '.$timemonth.'/'.$pelanggan->id_pelanggan.'/'.$timenow, Str::random(20).".".$ext_foto_mcb);
+          $foto_mcb = $request->foto_mcb->storeAs('public/data_kegiatans/'.$timeyear.' '.$timemonth.'/'.$pelanggan->id_pelanggan.'/'.$timenow, Str::random(20).".".$ext_foto_mcb);
           $data->foto_mcb = str_replace("public/","",$foto_mcb); 
         }
         if($request->file('foto_box_app')){
           $ext_foto_box_app = $request->foto_box_app->extension();
-          $foto_box_app = $request->foto_box_app->storeAs('public/data-kegiatans/'.$timeyear.' '.$timemonth.'/'.$pelanggan->id_pelanggan.'/'.$timenow, Str::random(20).".".$ext_foto_box_app);
+          $foto_box_app = $request->foto_box_app->storeAs('public/data_kegiatans/'.$timeyear.' '.$timemonth.'/'.$pelanggan->id_pelanggan.'/'.$timenow, Str::random(20).".".$ext_foto_box_app);
           $data->foto_box_app = str_replace("public/","",$foto_box_app); 
         }
         if($request->file('foto_modem')){
           $ext_foto_modem = $request->foto_modem->extension();
-          $foto_modem = $request->foto_modem->storeAs('public/data-kegiatans/'.$timeyear.' '.$timemonth.'/'.$pelanggan->id_pelanggan.'/'.$timenow, Str::random(20).".".$ext_foto_modem);
+          $foto_modem = $request->foto_modem->storeAs('public/data_kegiatans/'.$timeyear.' '.$timemonth.'/'.$pelanggan->id_pelanggan.'/'.$timenow, Str::random(20).".".$ext_foto_modem);
           $data->foto_modem = str_replace("public/","",$foto_modem); 
         }
         if($request->file('foto_ba')){
           $ext_foto_ba = $request->foto_ba->extension();
-          $foto_ba = $request->foto_ba->storeAs('public/data-kegiatans/'.$timeyear.' '.$timemonth.'/'.$pelanggan->id_pelanggan.'/'.$timenow, Str::random(20).".".$ext_foto_ba);
+          $foto_ba = $request->foto_ba->storeAs('public/data_kegiatans/'.$timeyear.' '.$timemonth.'/'.$pelanggan->id_pelanggan.'/'.$timenow, Str::random(20).".".$ext_foto_ba);
           $data->foto_ba = str_replace("public/","",$foto_ba); 
         }
         if($request->file('foto_bangunan')){
           $ext_foto_bangunan = $request->foto_bangunan->extension();
-          $foto_bangunan = $request->foto_bangunan->storeAs('public/data-kegiatans/'.$timeyear.' '.$timemonth.'/'.$pelanggan->id_pelanggan.'/'.$timenow, Str::random(20).".".$ext_foto_bangunan);
+          $foto_bangunan = $request->foto_bangunan->storeAs('public/data_kegiatans/'.$timeyear.' '.$timemonth.'/'.$pelanggan->id_pelanggan.'/'.$timenow, Str::random(20).".".$ext_foto_bangunan);
           $data->foto_bangunan = str_replace("public/","",$foto_bangunan); 
         }
         if($request->file('foto_1')){
           $ext_foto_1 = $request->foto_1->extension();
-          $foto_1 = $request->foto_1->storeAs('public/data-kegiatans/'.$timeyear.' '.$timemonth.'/'.$pelanggan->id_pelanggan.'/'.$timenow, Str::random(20).".".$ext_foto_1);
+          $foto_1 = $request->foto_1->storeAs('public/data_kegiatans/'.$timeyear.' '.$timemonth.'/'.$pelanggan->id_pelanggan.'/'.$timenow, Str::random(20).".".$ext_foto_1);
           $data->foto_1 = str_replace("public/","",$foto_1); 
         }
         if($request->file('foto_2')){
           $ext_foto_2 = $request->foto_2->extension();
-          $foto_2 = $request->foto_2->storeAs('public/data-kegiatans/'.$timeyear.' '.$timemonth.'/'.$pelanggan->id_pelanggan.'/'.$timenow, Str::random(20).".".$ext_foto_2);
+          $foto_2 = $request->foto_2->storeAs('public/data_kegiatans/'.$timeyear.' '.$timemonth.'/'.$pelanggan->id_pelanggan.'/'.$timenow, Str::random(20).".".$ext_foto_2);
           $data->foto_2 = str_replace("public/","",$foto_2); 
         }
 
