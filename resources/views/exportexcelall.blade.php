@@ -96,7 +96,7 @@
     @if(!empty($item->id_pelanggan))
         <td>{{$item->id_pelanggan}}</td>
         <td>{{explode("/", $item->tarif_daya)[0]}}</td>
-        <td>{{explode("/", $item->tarif_daya)[1]}}</td>
+        <td>{{explode("/", $item->tarif_daya)[1] ?? ''}}</td>
         <td>{{$item->nama}}</td>
         <td>{{$item->alamat}}</td>
         <td>{{$item->merk_meter}}</td>
